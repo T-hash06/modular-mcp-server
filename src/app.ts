@@ -1,5 +1,5 @@
 /**
- * Application setup and configuration for HeroUI MCP Server
+ * Application setup and configuration for MCP Server
  */
 
 import type { Server } from "node:http";
@@ -23,7 +23,7 @@ import { logger } from "@utils/logger.js";
 import type { Express } from "express";
 import express from "express";
 
-export class HeroUiMcpApplication implements Application {
+export class McpApplication implements Application {
 	private app: Express;
 	private server: Server | null = null;
 	private sessionManager: SessionTransportManager;
@@ -42,7 +42,7 @@ export class HeroUiMcpApplication implements Application {
 		return new Promise((resolve, reject) => {
 			try {
 				this.server = this.app.listen(this.config.port, () => {
-					logger.info(`HeroUI MCP Server running on port ${this.config.port}`);
+					logger.info(`MCP Server running on port ${this.config.port}`);
 					logger.info(
 						`Server name: ${this.config.name} v${this.config.version}`,
 					);

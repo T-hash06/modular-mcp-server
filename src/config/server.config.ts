@@ -1,5 +1,5 @@
 /**
- * Server configuration interface and default values for HeroUI MCP Server
+ * Server configuration interface and default values for MCP Server
  */
 
 import { randomUUID } from "node:crypto";
@@ -29,7 +29,7 @@ export interface HttpTransportConfig {
  * Default server configuration
  */
 export const defaultServerConfig: ServerConfig = {
-	name: "heroui-mcp-server",
+	name: "mcp-server",
 	version: "1.0.0",
 	port: Number(process.env.PORT) || 3000,
 	enableDnsRebindingProtection: false, // Disabled by default for backwards compatibility

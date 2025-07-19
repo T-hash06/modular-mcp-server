@@ -1,5 +1,5 @@
 /**
- * Session and transport management for HeroUI MCP Server
+ * Session and transport management for MCP Server
  */
 
 import type { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";

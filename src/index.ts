@@ -1,16 +1,16 @@
 /**
- * Main entry point for HeroUI MCP Server
+ * Main entry point for MCP Server
  */
 
 import { logger } from "@utils/logger.js";
-import { HeroUiMcpApplication } from "./app.js";
+import { McpApplication } from "./app.js";
 
 /**
  * Main function to start the application
  */
 async function main(): Promise<void> {
 	try {
-		const app = new HeroUiMcpApplication();
+		const app = new McpApplication();
 
 		// Handle graceful shutdown
 		const shutdown = async (signal: string) => {

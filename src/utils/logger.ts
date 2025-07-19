@@ -1,5 +1,5 @@
 /**
- * Logging utilities for HeroUI MCP Server
+ * Logging utilities for MCP Server
  */
 
 export enum LogLevel {

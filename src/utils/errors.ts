@@ -1,5 +1,5 @@
 /**
- * Error handling utilities for HeroUI MCP Server
+ * Error handling utilities for MCP Server
  */
 
 import { McpServerError, SessionError, ValidationError } from "@types";

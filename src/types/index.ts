@@ -1,5 +1,5 @@
 /**
- * Shared TypeScript interfaces and types for HeroUI MCP Server
+ * Shared TypeScript interfaces and types for MCP Server
  */
 
 import type {
